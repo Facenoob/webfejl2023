@@ -1,2 +1,2 @@
-# webfejl2023
-SZTE Webfejlesztési keretrendszerek Fake-Neptun beadandó
+# SZTE-Webfejlesztési keretrendszerek
+Fake-Neptun beadandó 2023
