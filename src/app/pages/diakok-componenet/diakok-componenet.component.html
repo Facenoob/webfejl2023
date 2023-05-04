@@ -1,0 +1,4 @@
+<div>
+  <app-kereses (search)="searching($event)"></app-kereses>
+  <app-diak-card *ngFor="let student of students | async" [student]="student"></app-diak-card>
+</div>

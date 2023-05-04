@@ -1,0 +1,16 @@
+<form *ngIf="data.student" [formGroup]="form2">
+  <label>ID:{{data.student.id}}</label><br><br>
+  <label>Status:{{data.student.status}}</label><br><br>
+  <label>Name:</label>
+  <input type="text" [ngModel]="data.student.name" required formControlName="name" placeholder="name here.."/>
+  <br><br>
+  <label>Email: </label>
+  <input type="text" [ngModel]="data.student.email" required formControlName="email" placeholder="email here.."/>
+  <br><br>
+
+  <label>The Grade: </label>
+  <input type="text" [ngModel]="data.student.grade" required formControlName="grade" placeholder="student grade here.."/>
+  <br><br>
+  <button mat-button (click)="dialogRef.close()">Back</button>
+  <button [mat-dialog-close]="form2.value" [disabled]="form2.invalid">Edit</button>
+</form>

@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+  <label>Name: </label>
+  <input matInput required formControlName="name" placeholder="name here.."/>
+  <br><br>
+  <label>Email: </label>
+  <input matInput required formControlName="email" placeholder="email here.."/>
+  <br><br>
+  <label>The Grade: </label>
+  <input matInput required formControlName="grade" placeholder="grade here.."/>
+  <br><br>
+  <button mat-button (click)="dialogRef.close()">Back</button>
+  <button [mat-dialog-close]="form.value" [disabled]="form.invalid">Publish</button>
+</form>

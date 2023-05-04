@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <mat-form-field>
+    <mat-icon>menu</mat-icon>
+    <mat-select [(ngModel)]="page">
+      <mat-option value="felvetel">Felvetel</mat-option>
+      <mat-option value="diakok">Diákok</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-toolbar>
+<div [ngSwitch]="page" >
+  <div *ngSwitchCase="'diakok'">
+    <app-diakok-componenet></app-diakok-componenet>
+  </div>
+  <div *ngSwitchDefault>
+    <app-felvetel-component></app-felvetel-component>
+  </div>
+</div>

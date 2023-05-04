@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejlfakeneptun2023": {
+      "hosting": {
+        "webfejlfakeneptun2023": [
+          "webfejlfakeneptun2023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejlfakeneptun2023"
+  }
+}

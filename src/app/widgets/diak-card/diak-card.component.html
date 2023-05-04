@@ -1,0 +1,9 @@
+<mat-card *ngIf="student">
+  <h1>{{student.name}}</h1>
+  <br>
+  <h3><b>Email:</b>{{student.email}}</h3>
+  <h3><b>Grade:</b>{{student.grade}}</h3>
+  <br>
+  <input type="button" value="szerkesztes" (click)="openModalEdit(student)">
+  <input type="button" value="torles" (click)="deleteStudent(student.id)">
+</mat-card>

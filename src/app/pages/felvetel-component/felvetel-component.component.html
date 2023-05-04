@@ -1,0 +1,11 @@
+<mat-card>
+  <h1>Itt felvehetsz diákokat</h1>
+  <br>
+  <h2>Itt egy pelda.</h2>
+  <br>
+  <app-pelda-diak-card *ngIf="student" [student]="student"></app-pelda-diak-card>
+  <br>
+  <h3>Vegyél fel egy diákot a gomb megynyomásával:</h3>
+  <br>
+  <input type="button" (click)="openModal()" value="Diák felvétele">
+</mat-card>

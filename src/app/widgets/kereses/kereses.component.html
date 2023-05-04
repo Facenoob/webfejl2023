@@ -1,0 +1,11 @@
+<mat-card>
+  <label>Kereses:</label><br>
+  <label>Mi alapjan keresel?</label>
+  <select #select>
+    <option value="name">Nev</option>
+    <option value="email">Email</option>
+    <option value="grade">Grade</option>
+  </select><br>
+  <input matInput type="text" #text>
+  <button mat-button (click)="searching(text.value,select.value)">Keres</button>
+</mat-card>
